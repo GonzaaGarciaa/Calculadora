@@ -1,0 +1,21 @@
+import suma_resta as a, multi_divi as b
+
+while True :
+    print("1) Suma")
+    print("2) Resta")
+    print("3) Multiplicacion")
+    print("4) Division")
+    print("5) Salir")
+    opcion = input("¿Que operacion desea realizar?: ")
+    
+    match opcion:
+        case "1":
+            print(a.suma())
+        case "2":
+            print(a.resta())
+        case "3":
+            print(b.multi())
+        case "4":
+            print(b.divi())
+        case _:
+            break
